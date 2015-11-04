@@ -1,0 +1,224 @@
+/* Shared
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.button {
+    color: #FFF;
+    background-color: #196735;  
+    border-color: #196735;
+    border-radius: 0px;
+}
+
+/* Sections
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.section {
+    padding: 8rem 0 7rem;
+    text-align: left;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+
+/* Fonts
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url('/fonts/PlayfairDisplay-Regular.otf');
+    font-weight: normal;
+}
+
+.hero-heading{
+    font-family: PlayfairDisplay;
+    font-size: 7rem;
+    line-height: .8;
+}.hero-heading-small{
+    font-family: PlayfairDisplay;
+    font-size: 3rem;
+    line-height: .8;
+    margin-left: 1.7rem;
+}
+
+
+/* hero
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.hero {
+    background-image: url('/images/hero.png');
+    background-position: 50% 52%;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 2.4;
+}
+.hero-text{
+    padding-left: 29rem;
+}
+.hero .button{
+    width: 14.5rem;
+    height: 5.5rem;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    padding: 5px 20px 10px 20px;
+    margin: 10px 0px 0px 0px;
+}
+.green{
+    background-image: url('/images/green_box.png');
+    height: 10px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* Areas of Practice
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.solid{
+    border: 0;
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+    height: .1rem;
+    width: 56rem;
+    background: #000;
+}
+.practice a, .news a{
+    color: #196735;
+    text-decoration: none;
+    padding-left: 2.2rem;
+}
+.practice{
+    color: #4a4a4a;
+}
+.practice h2, .news h2{
+    display: inline;
+}
+.practice h3{
+    margin-bottom: 1.0rem;
+}
+.practice p{
+    padding-right: 20rem;
+    margin-bottom: 0rem;
+}
+.practice .button{
+    width: 12.5rem;
+    height: 5.0rem;
+    background-color: transparent;
+    color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+    padding: 5px 20px 10px 20px;
+    margin: 12px 0px 40px 0px;
+    }
+.news{
+    background-color: #fafafa;
+    padding-left: -10px;
+}
+.date {
+    color: #646464;
+    font-size: .867rem;
+}
+.news-paragraph,
+.news-title{
+    color: #292929;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    .section {
+        padding: 12rem 0 11rem;
+    }
+    .info {
+        padding-bottom: 12rem;
+        text-align: left;
+        height: 165px;
+    }
+    .phone {
+        position: absolute;
+        top: -7rem;
+        right: 3rem;
+        max-height: 362px;
+        z-index: 3;
+    }
+    .phone + .phone {
+        top: -6rem;
+        display: block;
+        max-width: 73.8%;
+        right: 0;
+        z-index: 2;
+        max-height: 338px;
+    }
+    .info-heading {
+        font-size: 2.4rem;
+    }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+    .info {
+        height: 190px;
+    }
+    .info-heading {
+        font-size: 2.6rem;
+    }
+    .section {
+        padding: 14rem 0 15rem;
+    }
+    .info {
+        padding: 16rem 0 14rem;
+    }
+    .section-description {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phone {
+        top: -14rem;
+        right: 5rem;
+        max-height: 510px;
+    }
+    .phone + .phone {
+        top: -12rem;
+        max-height: 472px;
+    }
+    .categories {
+        padding: 15rem 0 8rem;
+    }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+    .section {
+        padding: 20rem 0 19rem;
+    }
+    .info {
+        padding: 22rem 0;
+    }
+    .info-heading {
+        font-size: 3.0rem;
+    }
+    .phone {
+        top: -16rem;
+        max-height: 615px;
+    }
+    .phone + .phone {
+        top: -14rem;
+        max-height: 570px;
+    }
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .section {
+        padding: 27.25rem 0 4rem;
+    }
+    .practice {
+        padding: 6.5rem 0;
+    }
+    .info-heading {
+        font-size: 3.0rem;
+    }
+    .phone {
+        top: -16rem;
+        max-height: 615px;
+    }
+    .phone + .phone {
+        top: -14rem;
+        max-height: 570px;
+    }
+}
