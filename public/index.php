@@ -15,7 +15,7 @@
 
 <!-- FONT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<!-- Using CSS3 font-face instead -->
+	<!-- Using CSS3 font-face instead see fonts folder-->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'> -->
 
@@ -30,7 +30,7 @@
 
 <!-- Head information from each blade
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/css/index_C.css">
+	<link rel="stylesheet" href="/css/index.css">
 
 <!-- section outlines for developement 
 	<style>
@@ -131,9 +131,21 @@
 					</div>
 				</div>
 				<div class="one-half column news">
-					<!-- NEWS ARTICLES GO HERE -->
 					<h2><span class="news-title">News</span></h2>
 					<a href="">View More News »</a>
+					<hr class="solid">
+					<!-- Article 1 -->
+					<h5>SEPTEMBER 28, 2015</h5>
+					<h4>Lorem Ipsum News Article</h4> 
+					<h4>Title Here</h4>
+					<p>Lorem ipsum dolor sit amet, vero epicurei mea id, eum et nulla alterum veritus. Purto possim vis ea. Id nobis persecuti moderatius usu, vix sumo dico an. Qui justo ubique et, utroque posidonium omittantur est id. Vim ut justo iudicabit, munere quodsi cu eos. Te minim verear pri, aeque feugiat te vel. Eum populo philosophia necessitatibus ei.</p>
+					<a href="" class="button">More Info »</a>
+					<!-- Article 2 -->
+					<h5>SEPTEMBER 28, 2015</h5>
+					<h4>Lorem Ipsum News Article</h4> 
+					<h4>Title Here</h4>
+					<p>Lorem ipsum dolor sit amet, vero epicurei mea id, eum et nulla alterum veritus. Purto possim vis ea. Id nobis persecuti moderatius usu, vix sumo dico an. Qui justo ubique et, utroque posidonium omittantur est id. Vim ut justo iudicabit, munere quodsi cu eos. Te minim verear pri, aeque feugiat te vel. Eum populo philosophia necessitatibus ei.</p>
+					<a href="" class="button">More Info »</a>
 				</div>
 			</div>
 		</div>

@@ -1,23 +1,3 @@
-/* General
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-.button {
-    color: #FFF;
-    background-color: #196735;  
-    border-color: #196735;
-    border-radius: 0px;
-}
-
-/* Sections
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-.section {
-    padding: 8rem 0 7rem;
-    text-align: left;
-}
-.section-heading,
-.section-description {
-    margin-bottom: 1.2rem;
-}
-
 /* Fonts
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 @font-face {
@@ -47,6 +27,39 @@
     margin-left: 1.7rem;
 }
 
+/* General
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.button {
+    color: #FFF;
+    background-color: #196735;  
+    border-color: #196735;
+    border-radius: 0px;
+}
+h4{
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+}
+h5{
+   font-family: OpenSans;
+   font-size: 1.3rem;
+   color: #646464;
+   letter-spacing: .12rem; 
+   margin-top: -5px;
+   margin-bottom: 0rem;
+}
+
+/* Sections
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.section {
+    padding: 8rem 0 7rem;
+    text-align: left;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
 
 /* hero
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
@@ -76,14 +89,14 @@
     background-size: cover;
 }
 
-/* Areas of Practice
+/* Split (Areas of Practice)
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .solid{
     border: 0;
     margin-left: 0rem;
     margin-bottom: 4rem;
     height: .1rem;
-    width: 56rem;
+    width: 97%;
     background: #000;
 }
 .ui-accordion-header.ui-state-active { 
@@ -114,7 +127,7 @@
     top: 0rem;
 }
 .practice p{
-    padding-right: 20rem;
+    padding-right: 20%;
     margin-bottom: 0rem;
 }
 .practice .button{
@@ -129,6 +142,18 @@
     padding: 5px 15px;
     margin: 12px 0px 30px 0px;
     }
+.news .button{
+    width: 12.5rem;
+    height: 5.0rem;
+    background-color: #292929;
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    letter-spacing: -.02rem;
+    color: #ffffff;
+    border: 1px solid #292929;
+    padding: 5px 15px;
+    margin: 12px 0px 40px 0px;
+    }
 .news{
     background-color: #fafafa;
     padding-left: -10px;
@@ -140,6 +165,11 @@
 .news-paragraph,
 .news-title{
     color: #292929;
+}
+.news p{
+    padding-top: .75rem;
+    margin-bottom: .5rem;
+    line-height: 2.6rem;
 }
 
 /* Bigger than 550 */
