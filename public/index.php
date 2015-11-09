@@ -86,42 +86,42 @@
 					<a href="">Other Practice Areas »</a>
 					<hr class="solid">
 					<div id="accordion">
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/graph.png" alt="graph icon">Business Litigation</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/graph.png" alt="graph icon">Business Litigation</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
 							</p>
 							<a href="" class="button">More Info »</a>
 						</div>
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/dollar.png" style="top: -.5rem;" alt="dollar icon">Estate Planning</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/dollar.png" style="top: -.5rem;" alt="dollar icon">Estate Planning</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
 							</p>
 							<a href="" class="button">More Info »</a>
 						</div>
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/tools.png" alt="tools icon">Labor &amp; Employment</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/tools.png" alt="tools icon">Labor &amp; Employment</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
 							</p>
 							<a href="" class="button">More Info »</a>
 						</div>
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/auction.png" style="top: -.25rem;" alt="auction icon">Tax Law</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/auction.png" style="top: -.25rem;" alt="auction icon">Tax Law</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
 							</p>
 							<a href="" class="button">More Info »</a>
 						</div>
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/briefcase.png" style="top: -.25rem; right: 2.6rem;" alt="briefcase icon">Construction Litigation / Surety Law</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/briefcase.png" style="top: -.25rem; right: 2.6rem;" alt="briefcase icon">Construction Litigation / Surety Law</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
 							</p>
 							<a href="" class="button">More Info »</a>
 						</div>
-						<h3><img src="/images/icon_outline.png" alt="icon outline"><img class="icon" src="/images/alert.png" style="right: 2.9rem;" alt="alert icon">Alternatetive Dispute Resolution</h3>
+						<h3><img class="grey" src="/images/icon_outline.png" alt="icon outline"><img class="icon grey" src="/images/alert.png" style="right: 2.9rem;" alt="alert icon">Alternatetive Dispute Resolution</h3>
 						<div>
 							<p>
 								Litigation is an integral part of Barrow &amp; Grimm’s practice. The firm’s lawyers have earned excellent reputations and the respect of their peers by offering extensive experience and skill from the smallest to the most complex litigation issues..
@@ -133,7 +133,7 @@
 				<div class="one-half column news">
 					<!-- NEWS ARTICLES GO HERE -->
 					<h2><span class="news-title">News</span></h2>
-					<a href="">View More News</a>
+					<a href="">View More News »</a>
 				</div>
 			</div>
 		</div>
