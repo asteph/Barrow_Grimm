@@ -26,6 +26,48 @@
     line-height: .8;
     margin-left: 1.7rem;
 }
+/* Hamburger Menu
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.mobile-nav{
+    padding-top: 3rem;
+    float: right;
+}
+
+.menu-btn div {
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    top: 64%;
+    padding-right: 8px;
+    margin-top: -0.50em;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 99;
+}
+ 
+.menu-btn span {
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 4px 0;
+    background: rgb(0,0,0);
+    z-index: 99;
+}
+ 
+.responsive-menu{
+    display: none;
+    text-align: center;
+}
+.responsive-menu ul{
+    list-style-type: none;
+}
+.expand {
+    display: block !important; 
+}
+
 
 /* General
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
@@ -89,7 +131,7 @@ h5{
     background-size: cover;
 }
 
-/* Split (Areas of Practice)
+/* Split (Areas of Practice / News)
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .solid{
     border: 0;
@@ -102,7 +144,7 @@ h5{
 .ui-accordion-header.ui-state-active { 
     color: #196735; 
 }
-.practice a, .news a{
+.practice a, .news a, .attorneys a{
     color: #196735;
     text-decoration: none;
     padding-left: 2.2rem;
@@ -110,7 +152,7 @@ h5{
 .practice{
     color: #4a4a4a;
 }
-.practice h2, .news h2{
+.practice h2, .news h2, .attorneys h2{
     display: inline;
 }
 .practice h3{
@@ -171,6 +213,62 @@ h5{
     margin-bottom: .5rem;
     line-height: 2.6rem;
 }
+/* Attorneys
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.attorneys{
+    color: #FFFFFF;
+    background-color: #292929;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+}
+.attorneys .solid{
+    border: 0;
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+    height: .1rem;
+    width: 100%;
+    background: #FFFFFF;
+}
+.attorneys .columns div{
+    display: inline-block;
+    margin-right: 1.55rem;
+    margin-bottom: 1.55rem;
+    text-align: center;
+}
+.attorneys .columns div:last-child{
+    margin-right: 0rem;
+}
+h6{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+}
+.attorneys p{
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+}
+/* Logos
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.logos{
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+    text-align: center;
+}
+.logos img{
+    margin-right: 5.5rem;
+}
+
+/* Footer
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+footer{
+    color: #FFFFFF;
+    background-color: #292929;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
@@ -204,6 +302,9 @@ h5{
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
+    .mobile-nav{
+        display: none;
+    }
     .info {
         height: 190px;
     }
@@ -237,6 +338,9 @@ h5{
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
+    .mobile-nav{
+        display: none;
+    }
     .section {
         padding: 20rem 0 19rem;
     }
@@ -257,6 +361,9 @@ h5{
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+    .mobile-nav{
+        display: none;
+    }
     .container {
         width: 100%;
     }

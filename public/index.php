@@ -32,13 +32,6 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="/css/index.css">
 
-<!-- section outlines for developement 
-	<style>
-		.column, .columns{
-			border-style: solid;
-		}
-	</style>
- -->
 </head>
 <body>
 
@@ -47,8 +40,33 @@
 	<div class="nav">
 	    <div class="container">
 			<div class="row">
-				<div class="twelve columns">
-					<h1>Logo and Navigation</h1>  
+				<div class="three columns">
+					<img src="/images/logo_header.png" alt="barrow and grimm logo">
+				</div>
+				<div class="nine columns">
+					<div class="mobile-nav">
+					    <div class="menu-btn" id="menu-btn">
+					    	<div></div>
+					    	<span></span>
+					    	<span></span>
+					    	<span></span>
+					    </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<div class="responsive-menu">
+						    <ul>
+						        <li>Home</li>
+						        <li>About Us</li>
+						        <li>Attorneys</li>
+						        <li>Areas of Practice</li>
+						        <li>News/Updates</li>
+						        <li>Careers</li>
+						        <li>Contact</li>
+						    </ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -131,7 +149,7 @@
 					</div>
 				</div>
 				<div class="one-half column news">
-					<h2><span class="news-title">News</span></h2>
+					<h2 class="news-title">News</h2>
 					<a href="">View More News »</a>
 					<hr class="solid">
 					<!-- Article 1 -->
@@ -150,16 +168,116 @@
 			</div>
 		</div>
 	</div>
+	<div class="attorneys">
+	    <div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<h2>Our Attorneys</h2> 
+					<a href="">View Attorneys »</a>
+					<hr class="solid"> 
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+					<div>
+						<img src="/images/associate.png" alt="associate headshot">
+						<h6>Nicholas M. Jones</h6>
+						<p>Associate</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="logos">
+	    <div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<img src="/images/logo_1.png" alt="super lawyers logo">  
+					<img src="/images/logo_2.png" alt="peer review rated logo">  
+					<img src="/images/logo_3.png" alt="super law firms logo">  
+					<img src="/images/logo_4.png" alt="best lawyers logo">  
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer>
-
+		<div class="container">
+			<div class="row">
+				<div class="four columns">
+					<div>
+						<a href="">Home</a>
+						<a href="">About Us</a>
+						<a href="">Attorneys</a>
+					</div>
+					<div>
+						<a href="">Areas of Practice</a>
+						<a href="">News</a>
+						<a href="">Contact</a>
+					</div>
+					<hr class="solid">
+					<p>&copy; copyright <a class="green-link" href="">Forge Multimedia</a>. All rights reserved.</p>
+					<hr class="solid">
+					<img src="/images/social_media.png" alt="social media link">
+				</div>
+				<div class="four columns">
+					<div class="map-canvas"></div>
+					<p>110 W. Seventh St. Suit 900 Tulsa, OK</p>
+					<p><strong>p</strong>: 918.584.1600 <span class="space"><strong>f</strong>: 918.585.2444</span></p>
+					<p><strong>e</strong>: <a href="" class="green-link">info@barrowgrimm.com</a></p>
+				</div>
+				<div class="four columns">
+					<img src="/images/logo_footer.png" alt="Barrow and Grimm Logo">
+					<p>Attorney Advertising. The hiring of a lawyer is an important decision that should not be based solely upon advertisements. This web site is designed for general information only. The information presented at this site should not be construed to be formal legal advice nor the formation of a lawyer/client relationship.</p>
+				</div>
+			</div>
+		</div>
 	</footer>
 <!-- End Document 
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script>
+	<script type="text/javascript">
+	"use strict";
+	// Hamburger menu
+	$(function(){
+		$( '.menu-btn' ).click(function(){
+		$('.responsive-menu').toggleClass('expand')
+		})
+    })
+	// Accordian
 	$(function() {
 		$( "#accordion" ).accordion({
 			event: "click hoverintent",
