@@ -41,13 +41,13 @@
 	    <div class="container">
 			<div class="row">
 				<div class="three columns">
-					<img src="/images/logo_header.png" alt="barrow and grimm logo">
+					<img id="logo_header" src="/images/logo_header.png" alt="barrow and grimm logo">
 				</div>
 				<div class="nine columns no-gutter">
 					<div class="big-nav">
-						<div class="search">
-							search bar and number
-						</div>
+						<form id="search-form">
+							<input id="search-box" type="search" name="site_search" placeholder="search"><span id="phone"><img src="/images/phone.png" alt="phone icon">918.584.1600</span>
+						</form>
 						<!-- For simple static site, current link determined by matching body and anchor class -->
 						<a href="" class="home">Home</a>
 						<a href="">About Us</a>

@@ -11,6 +11,17 @@
     font-weight: bold;
 }
 @font-face {
+    font-family: PlayfairDisplaySC;
+    src: url('/fonts/PlayfairDisplaySC-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url('/fonts/PlayfairDisplay-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
     font-family: OpenSans;
     src: url('/fonts/OpenSans-Regular.ttf');
     font-weight: normal;
@@ -30,6 +41,43 @@
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .nav .nine{
     width: 78%;
+}
+#logo_header{
+    padding-top: 1rem;
+}
+#search-form{
+    margin-bottom: 0rem;
+    padding: 0rem;
+}
+#search-box{
+    margin: 0rem 2rem 2rem;
+    border-radius: 0rem;
+    height: 3rem;
+    width: 18.7rem;
+    border-color: #919191;
+    font-family: PlayfairDisplay;
+    font-style: italic;
+    font-size: 1.5rem;
+    background-image: url('/images/search_icon.png');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+#search-box:focus {
+    background-image: none;
+}
+#phone{
+    font-family: PlayfairDisplaySC;
+    font-size: 2.2rem;
+    font-weight: bold;
+    -moz-font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+}
+#phone img{
+    border-left: solid 1px #919191;
+    padding: .5rem 1.4rem .5rem 2rem;
+    position: relative;
+    top: 1rem;
 }
 .big-nav{
     text-align: right;
