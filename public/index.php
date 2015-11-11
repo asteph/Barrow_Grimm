@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="/css/index.css">
 
 </head>
-<body>
+<body class="home">
 
 <!-- Primary Page Layout
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,7 +43,20 @@
 				<div class="three columns">
 					<img src="/images/logo_header.png" alt="barrow and grimm logo">
 				</div>
-				<div class="nine columns">
+				<div class="nine columns no-gutter">
+					<div class="big-nav">
+						<div class="search">
+							search bar and number
+						</div>
+						<!-- For simple static site, current link determined by matching body and anchor class -->
+						<a href="" class="home">Home</a>
+						<a href="">About Us</a>
+						<a href="">Attorneys</a>
+						<a href="">Areas of Practice</a>
+						<a href="">News/Updates</a>
+						<a href="">Careers</a>
+						<a href="">Contact Us</a>
+					</div>
 					<div class="mobile-nav">
 					    <div class="menu-btn" id="menu-btn">
 					    	<div></div>

@@ -26,9 +26,34 @@
     line-height: .8;
     margin-left: 1.7rem;
 }
-/* Hamburger Menu
+/* Hamburger Menu / Big Menu
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
+.nav .nine{
+    width: 78%;
+}
+.big-nav{
+    text-align: right;
+}
+.big-nav a{
+    text-decoration: none;
+    font-family: PlayfairDisplay;
+    font-size: 1.7rem;
+    color: #4a4a4a;
+    padding: .4rem 1.8rem .6rem 1.8rem;
+    margin: .4rem;
+}
+.big-nav a:hover{
+    color: #FFFFFF;
+    background-color: #196735;
+}
+/*add other pages as needed*/
+body.home a.home{
+    color: #FFFFFF;
+    background-color: #196735;
+}
+.big-nav a:last-child{
+    margin-right: 0rem;
+}
 .mobile-nav{
     padding-top: 3rem;
     float: right;
@@ -71,6 +96,9 @@
 
 /* General
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.no-gutter{
+    margin: 0rem;
+}
 .button {
     color: #FFF;
     background-color: #196735;  
@@ -275,29 +303,6 @@ footer{
     .section {
         padding: 12rem 0 11rem;
     }
-    .info {
-        padding-bottom: 12rem;
-        text-align: left;
-        height: 165px;
-    }
-    .phone {
-        position: absolute;
-        top: -7rem;
-        right: 3rem;
-        max-height: 362px;
-        z-index: 3;
-    }
-    .phone + .phone {
-        top: -6rem;
-        display: block;
-        max-width: 73.8%;
-        right: 0;
-        z-index: 2;
-        max-height: 338px;
-    }
-    .info-heading {
-        font-size: 2.4rem;
-    }
 }
 
 /* Bigger than 750 */
@@ -314,26 +319,6 @@ footer{
     .section {
         padding: 14rem 0 15rem;
     }
-    .info {
-        padding: 16rem 0 14rem;
-    }
-    .section-description {
-        max-width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .phone {
-        top: -14rem;
-        right: 5rem;
-        max-height: 510px;
-    }
-    .phone + .phone {
-        top: -12rem;
-        max-height: 472px;
-    }
-    .categories {
-        padding: 15rem 0 8rem;
-    }
 }
 
 /* Bigger than 1000 */
@@ -343,20 +328,6 @@ footer{
     }
     .section {
         padding: 20rem 0 19rem;
-    }
-    .info {
-        padding: 22rem 0;
-    }
-    .info-heading {
-        font-size: 3.0rem;
-    }
-    .phone {
-        top: -16rem;
-        max-height: 615px;
-    }
-    .phone + .phone {
-        top: -14rem;
-        max-height: 570px;
     }
 }
 /* Larger than Desktop HD */
@@ -372,16 +343,5 @@ footer{
     }
     .practice, .news {
         padding: 6.5rem 0;
-    }
-    .info-heading {
-        font-size: 3.0rem;
-    }
-    .phone {
-        top: -16rem;
-        max-height: 615px;
-    }
-    .phone + .phone {
-        top: -14rem;
-        max-height: 570px;
     }
 }
