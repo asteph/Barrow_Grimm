@@ -59,6 +59,7 @@
 					</div>
 					<div class="mobile-nav">
 					    <div class="menu-btn" id="menu-btn">
+					    	<!-- CSS Hamburger -->
 					    	<div></div>
 					    	<span></span>
 					    	<span></span>
@@ -70,6 +71,7 @@
 					<div class="twelve columns">
 						<div class="responsive-menu">
 						    <ul>
+						    	<!-- Make links when doing mobile work -->
 						        <li>Home</li>
 						        <li>About Us</li>
 						        <li>Attorneys</li>
@@ -165,7 +167,7 @@
 				</div>
 				<div class="one-half column news">
 					<h2 class="news-title">News</h2>
-					<a href="">View More News »</a>
+					<a id="news-link" href="">View More News »</a>
 					<hr class="solid">
 					<!-- Article 1 -->
 					<h5>SEPTEMBER 28, 2015</h5>
@@ -189,46 +191,85 @@
 				<div class="twelve columns">
 					<h2>Our Attorneys</h2> 
 					<a href="">View Attorneys »</a>
-					<hr class="solid"> 
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
+					<hr class="solid">
+					<div id="attorneySlide1"> 
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
 					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
-					</div>
-					<div>
-						<img src="/images/associate.png" alt="associate headshot">
-						<h6>Nicholas M. Jones</h6>
-						<p>Associate</p>
+					<div id="attorneySlide2"> 
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
+						<div>
+							<img src="/images/associate.png" alt="associate headshot">
+							<h6>Nicholas M. Jones</h6>
+							<p>Associate</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -371,6 +412,28 @@
 			});
 		}
 	};
+
+	// Attorneys Picture Slide Loops on an interval
+	// set interval
+	var i = 1;
+	setInterval(function(){ 
+		console.log(i);
+		if(i % 2){
+			console.log('odd'); 
+			// var div1 = $("#attorneySlide1");
+			var div2 = $("#attorneySlide2");
+			// div1.animate({right: '140rem', opacity: '1'}, "slow");
+			div2.animate({right: '140rem', opacity: '1'}, "slow");
+		}else{
+			console.log('even');
+			// var div1 = $("#attorneySlide1");
+			var div2 = $("#attorneySlide2");
+			// div1.animate({right: '0rem', opacity: '1'}, "slow");
+			div2.animate({right: '0rem', opacity: '1'}, "slow");
+		}
+		i++;
+	}, 3000);
+	$(".attorneys").click();
 	</script>
 	<!-- Load the Google Maps API site key after '='-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzQpvLCanxEbve8Cf460duxyO5AxSm82g"></script>
