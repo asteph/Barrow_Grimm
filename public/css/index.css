@@ -26,17 +26,39 @@
     src: url('/fonts/OpenSans-Regular.ttf');
     font-weight: normal;
 }
-
-.hero-heading{
-    font-family: PlayfairDisplay;
-    font-size: 7rem;
-    line-height: .8;
-}.hero-heading-small{
-    font-family: PlayfairDisplay;
-    font-size: 3rem;
-    line-height: .8;
-    margin-left: 1.7rem;
+@font-face {
+    font-family: OpenSans;
+    src: url('/fonts/OpenSans-Bold.ttf');
+    font-weight: bold;
 }
+
+/* General
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.no-gutter{
+    margin: 0rem;
+}
+.button {
+    color: #FFF;
+    background-color: #2e864d;  
+    border-color: #2e864d;
+    border-radius: 0px;
+}
+h4{
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+}
+h5{
+   font-family: OpenSans;
+   font-size: 1.3rem;
+   color: #646464;
+   letter-spacing: .12rem; 
+   margin-top: -5px;
+   margin-bottom: 0rem;
+}
+
+
 /* Hamburger Menu / Big Menu
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .nav .nine{
@@ -141,33 +163,6 @@ body.home a.home{
     display: block !important; 
 }
 
-
-/* General
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-.no-gutter{
-    margin: 0rem;
-}
-.button {
-    color: #FFF;
-    background-color: #196735;  
-    border-color: #196735;
-    border-radius: 0px;
-}
-h4{
-    font-family: PlayfairDisplay;
-    font-weight: bold;
-    font-size: 2.2rem;
-    margin-bottom: 0rem;
-}
-h5{
-   font-family: OpenSans;
-   font-size: 1.3rem;
-   color: #646464;
-   letter-spacing: .12rem; 
-   margin-top: -5px;
-   margin-bottom: 0rem;
-}
-
 /* Sections
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .section {
@@ -181,6 +176,17 @@ h5{
 
 /* hero
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.hero-heading{
+    font-family: PlayfairDisplay;
+    font-size: 7rem;
+    line-height: .8;
+}.hero-heading-small{
+    font-family: PlayfairDisplay;
+    font-size: 3rem;
+    line-height: .8;
+    margin-left: 1.7rem;
+}
 .hero {
     background-image: url('/images/hero.png');
     background-position: 50% 52%;
@@ -200,7 +206,7 @@ h5{
     padding: 5px 20px 10px 20px;
     margin: 10px 0px 0px 0px;
 }
-.green{
+.green-box{
     background-image: url('/images/green_box.png');
     height: 10px;
     -webkit-background-size: cover;
@@ -209,6 +215,12 @@ h5{
 
 /* Split (Areas of Practice / News)
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.split{
+    background-image: url('/images/background.png');
+    background-position: 99% 0%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
 .solid{
     border: 0;
     margin-left: 0rem;
@@ -218,10 +230,10 @@ h5{
     background: #000;
 }
 .ui-accordion-header.ui-state-active { 
-    color: #196735; 
+    color: #2e864d; 
 }
 .practice a, .news a, .attorneys a{
-    color: #196735;
+    color: #2e864d;
     text-decoration: none;
     padding-left: 2.2rem;
 }
@@ -272,10 +284,6 @@ h5{
     padding: 5px 15px;
     margin: 12px 0px 40px 0px;
     }
-.news{
-    background-color: #fafafa;
-    padding-left: -10px;
-}
 .date {
     color: #646464;
     font-size: .867rem;
@@ -332,10 +340,12 @@ h6{
     padding-bottom: 6.5rem;
     text-align: center;
 }
-.logos img{
-    margin-right: 5.5rem;
+.logos .columns{
+    text-align: left;
 }
-
+.logos img{
+    position: relative;
+}
 /* Footer
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
@@ -344,6 +354,49 @@ footer{
     background-color: #292929;
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
+}
+footer p{
+    margin: 0rem;
+}
+footer .solid{
+    background: #4a4a4a;
+    margin: 4rem 0rem 4rem 0rem;
+    width: 85%;
+}
+footer .solid-2{
+    margin-bottom: 2rem;
+}
+.green-link{
+    color: #2e864d;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer a:hover{  
+    font-weight: bold;  
+    color: #2e864d;
+}
+#links-left{
+    width: 38%;
+    float: left
+}
+#copyright{
+    font-size: 1.3rem;
+}
+#map-canvas{
+    width: 31rem;
+    height: 20rem;
+    color: #000000;
+    border: solid 2px #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+.space{
+    margin-left: 3rem;
+}
+#about{
+    width: 90%;
+    margin-top: 1rem;
 }
 
 /* Bigger than 550 */

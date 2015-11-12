@@ -87,7 +87,7 @@
 	<!-- green embelishment -->
 	<div class="container">
 		<div class="row">
-			<div class="twelve columns green"></div> 
+			<div class="twelve columns green-box"></div> 
 		</div>
 	</div>
 	<div class="hero section">
@@ -106,7 +106,7 @@
 	<!-- green embelishment -->
 	<div class="container">
 		<div class="row">
-			<div class="twelve columns green"></div> 
+			<div class="twelve columns green-box"></div> 
 		</div>
 	</div>
 	<div class="split">
@@ -236,10 +236,10 @@
 	    <div class="container">
 			<div class="row">
 				<div class="twelve columns">
-					<img src="/images/logo_1.png" alt="super lawyers logo">  
-					<img src="/images/logo_2.png" alt="peer review rated logo">  
-					<img src="/images/logo_3.png" alt="super law firms logo">  
-					<img src="/images/logo_4.png" alt="best lawyers logo">  
+					<img style="padding-left: 6.8rem;"src="/images/logo_1.png" alt="super lawyers logo">
+					<img style="padding-left: 3.5rem; top: 1rem"src="/images/logo_2.png" alt="peer review rated logo">  
+					<img style="padding-left: 4.5rem; top: 3.2rem"src="/images/logo_3.png" alt="super law firms logo">  
+					<img style="padding-left: 6.5rem; bottom: 1.5rem"src="/images/logo_4.png" alt="best lawyers logo">  
 				</div>
 			</div>
 		</div>
@@ -249,30 +249,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="four columns">
-					<div>
-						<a href="">Home</a>
-						<a href="">About Us</a>
-						<a href="">Attorneys</a>
+					<div id="links-left">
+						<p><a href="">Home</a></p>
+						<p><a href="">About Us</a></p>
+						<p><a href="">Attorneys</a></p>
 					</div>
 					<div>
-						<a href="">Areas of Practice</a>
-						<a href="">News</a>
-						<a href="">Contact</a>
+						<p><a href="">Areas of Practice</a></p>
+						<p><a href="">News</a></p>
+						<p><a href="">Contact</a></p>
 					</div>
 					<hr class="solid">
-					<p>&copy; copyright <a class="green-link" href="">Forge Multimedia</a>. All rights reserved.</p>
-					<hr class="solid">
+					<p id="copyright">&copy; copyright <a class="green-link" href="">Forge Multimedia</a>. All rights reserved.</p>
+					<hr class="solid solid-2">
 					<img src="/images/social_media.png" alt="social media link">
 				</div>
 				<div class="four columns">
-					<div class="map-canvas"></div>
-					<p>110 W. Seventh St. Suit 900 Tulsa, OK</p>
+					<div id="map-canvas"></div>
+					<p>110 W. Seventh St. Suite 900 Tulsa, OK</p>
 					<p><strong>p</strong>: 918.584.1600 <span class="space"><strong>f</strong>: 918.585.2444</span></p>
 					<p><strong>e</strong>: <a href="" class="green-link">info@barrowgrimm.com</a></p>
 				</div>
 				<div class="four columns">
 					<img src="/images/logo_footer.png" alt="Barrow and Grimm Logo">
-					<p>Attorney Advertising. The hiring of a lawyer is an important decision that should not be based solely upon advertisements. This web site is designed for general information only. The information presented at this site should not be construed to be formal legal advice nor the formation of a lawyer/client relationship.</p>
+					<p id="about">Attorney Advertising. The hiring of a lawyer is an important decision that should not be based solely upon advertisements. This web site is designed for general information only. The information presented at this site should not be construed to be formal legal advice nor the formation of a lawyer/client relationship.</p>
 				</div>
 			</div>
 		</div>
@@ -282,6 +282,7 @@
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
 	<script type="text/javascript">
 	"use strict";
 	// Hamburger menu
@@ -347,6 +348,7 @@
 						event[ prop ] = orig[ prop ];
 					}
 				}
+	
 				// Prevent accessing the original event since the new event
 				// is fired asynchronously and the old event is no longer
 				// usable (#6028)
@@ -367,6 +369,52 @@
 			});
 		}
 	};
+	</script>
+	<!-- Load the Google Maps API site key after '='-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzQpvLCanxEbve8Cf460duxyO5AxSm82g"></script>
+
+	<!-- Script to show address on map  -->
+	<script type="text/javascript">
+	"use strict";
+	// Set address to geocode
+	var address = '110 W. Seventh St. Suite 900, Tulsa, OK 74119';
+
+	// Init geocoder object
+	var geocoder = new google.maps.Geocoder();
+
+	// Geocode address
+	geocoder.geocode( { 'address': address}, function(results, status) {
+	  // Check for a successful result
+	  if (status == google.maps.GeocoderStatus.OK) {
+	  // Set our map options
+	    var mapOptions = {
+	      // Set the zoom level
+	      zoom: 14,
+	      // This sets the center of the map location
+	      center: results[0].geometry.location,
+	      // change maptype (street default)
+	      mapTypeId: google.maps.MapTypeId.HYBRID
+	    } 
+	    //render the map
+	    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	    //add marker to existing map
+	    var marker = new google.maps.Marker({
+	        position: results[0].geometry.location,
+	        title:"Barrow & Grimm",
+	        map:map
+	    });
+	    var infowindow = new google.maps.InfoWindow({
+	      content: '<div style="height: 15px; width: 100%; font-size: 10px;">110 WEST SEVENTH ST SUITE 900 TULSA, OK 74119</div>'
+	    });
+
+	    // To add the marker to the map, call setMap();
+	    infowindow.open(map, marker);
+
+	  } else{
+	      // Show an error message with the status if our request fails
+	      alert("Geocoding was not successful - STATUS: " + status);
+	  }
+	});
 	</script>
 </body>
 </html>
