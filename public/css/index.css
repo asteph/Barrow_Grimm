@@ -212,6 +212,11 @@ body.home a.home{
     -webkit-background-size: cover;
     background-size: cover;
 }
+.half-grey{
+    /*background: color image position/size repeat origin clip attachment initial|inherit */
+    background: 
+       url('/images/background.png') 98% 0%/50% 100% no-repeat,
+}
 
 /* Split (Areas of Practice / News)
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
@@ -229,8 +234,17 @@ body.home a.home{
     width: 97%;
     background: #000;
 }
+.green{
+    display: none;
+}
 .ui-accordion-header.ui-state-active { 
     color: #2e864d; 
+}
+.ui-accordion-header.ui-state-active .grey{ 
+    display: none; 
+}
+.ui-accordion-header.ui-state-active .green{ 
+    display: inline; 
 }
 .practice a, .news a, .attorneys a{
     color: #2e864d;
